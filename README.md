@@ -42,16 +42,17 @@ Clone the repo
 https://github.com/Sakurapainting/XGZP6847AProj
 ```
 
-##### 接线：
-压力传感器：
-1、不接
-2、stm32 3.3v
-3、stm32 gnd
-4、stm32 3.3v
-5、stm32 GPIO PA5
-6、stm32 gnd
+### 接线：
 
-USB转串口：
+#### 压力传感器：
+1. 不接
+2. stm32 3.3v
+3. stm32 gnd
+4. stm32 3.3v
+5. stm32 GPIO PA5
+6. stm32 gnd
+
+#### USB转串口：
 GND: stm32 gnd
 RX: stm32 GPIO PA9
 TX: stm32 GPIO PA10
