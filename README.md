@@ -42,7 +42,7 @@ Clone the repo
 https://github.com/Sakurapainting/XGZP6847AProj
 ```
 
-接线：
+##### 接线：
 压力传感器：
 1、不接
 2、stm32 3.3v
