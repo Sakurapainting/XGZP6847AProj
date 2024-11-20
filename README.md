@@ -53,9 +53,9 @@ https://github.com/Sakurapainting/XGZP6847AProj
 6. stm32 gnd
 
 #### USB转串口：
-GND: stm32 gnd
-RX: stm32 GPIO PA9
-TX: stm32 GPIO PA10
+1. GND: stm32 gnd
+2. RX: stm32 GPIO PA9
+3. TX: stm32 GPIO PA10
 
 ### 文件目录说明
 
