@@ -2,107 +2,58 @@
 
 # XGZP6847AProj压力传感器+串口
 
+# XGZP6847AProj —— STM32压力传感器串口通讯项目
 
-<br />
+## 项目简介
+本项目基于 STM32F103C8T6 单片机，使用 HAL 库驱动 XGZP6847A 压力传感器，并通过串口（UART）与上位机通讯。适用于压力采集、数据传输等嵌入式场景。
 
- 
-## 目录
+## 硬件接线
+### 压力传感器 XGZP6847A
+1. 不接
+2. STM32 3.3V
+3. STM32 GND
+4. STM32 3.3V
+5. STM32 GPIO PA5
+6. STM32 GND
 
-- [上手指南](#上手指南)
-  - [开发前的配置要求](#开发前的配置要求)
-  - [安装步骤](#安装步骤)
-- [文件目录说明](#文件目录说明)
-- [开发的架构](#开发的架构)
-- [部署](#部署)
-- [使用到的框架](#使用到的框架)
-- [贡献者](#贡献者)
-  - [如何参与开源项目](#如何参与开源项目)
-- [版本控制](#版本控制)
-- [作者](#作者)
-- [鸣谢](#鸣谢)
+### USB转串口模块
+1. GND — STM32 GND
+2. RX  — STM32 PA9
+3. TX  — STM32 PA10
 
-### 上手指南
+## 环境依赖
+- STM32CubeMX
+- Keil5 (MDK-ARM)
+- STM32F103C8T6 开发板
+- XGZP6847A 压力传感器
 
-
-
-###### 开发前的配置要求
-
-1. C/C++
-2. STM32CubeMX + Keil5 (HAL)
-3. STM32F103C8T6
-4. XGZP6847A 压力传感器
-5. and circuit components...
-
-
-###### **安装步骤**
-
-Clone the repo
-
-```sh
-https://github.com/Sakurapainting/XGZP6847AProj
+## 目录结构说明
+```
+Core/
+  Inc/    # 头文件
+  Src/    # 源文件
+Drivers/  # HAL库及CMSIS
+MDK-ARM/  # Keil工程文件
+README.md # 项目说明
 ```
 
-### 接线：
+## 开发架构
+- 使用 STM32 HAL 库进行外设初始化和数据采集
+- 通过 ADC 采集压力传感器数据
+- 串口（USART）实现数据发送到上位机
 
-#### 压力传感器：
-1. 不接
-2. stm32 3.3v
-3. stm32 gnd
-4. stm32 3.3v
-5. stm32 GPIO PA5
-6. stm32 gnd
+## 部署与编译
+1. 使用 STM32CubeMX 生成初始化代码
+2. 用 Keil5 打开 MDK-ARM 目录下的工程文件 `.uvprojx`
+3. 编译并下载到 STM32F103C8T6 开发板
 
-#### USB转串口：
-1. GND: stm32 gnd
-2. RX: stm32 GPIO PA9
-3. TX: stm32 GPIO PA10
+## 作者
+邮箱：you2899047197@163.com
 
-### 文件目录说明
+## 版本控制
+本项目使用 Git 进行版本管理，详见仓库历史。
 
-
-
-
-### 开发的架构 
-
-
-
-### 部署
-
-
-
-### 使用到的框架
-
-
-
-### 贡献者
-
-
-
-#### 如何参与开源项目
-
-贡献使开源社区成为一个学习、激励和创造的绝佳场所。你所作的任何贡献都是**非常感谢**的。
-
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-
-### 版本控制
-
-该项目使用Git进行版本管理。您可以在repository参看当前可用版本。
-
-### 作者
-
-you2899047197@163.com
-
-
-### 版权说明
-
-
-### 鸣谢
+## License
+本项目采用 MIT License 开源协议，详见 LICENSE 文件。
 
 
