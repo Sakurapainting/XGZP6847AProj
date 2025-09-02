@@ -67,22 +67,6 @@ HAL_StatusTypeDef HalState;
 uint16_t Ret;
 uint16_t Start_GetResult(void)
 {
-
-    // !!!!!!!!! Single conversion mode
-
-    // //启动ADC转换
-    // HAL_ADC_Start(&hadc1);
-    // //等待转换完成
-    // HalState = HAL_ADC_PollForConversion(&hadc1, 1000); //等待转换完成，超时时�?1s
-    // if (HalState == HAL_OK){
-    //   Ret = HAL_ADC_GetValue(&hadc1);
-    // }
-    // else{
-    //   Ret = 0;
-    // }
-    // HAL_ADC_Stop(&hadc1);
-
-    // !!!!!!!!! Continuous conversion mode
     Ret = HAL_ADC_GetValue(&hadc1);
     return Ret;
 }

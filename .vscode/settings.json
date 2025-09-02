@@ -11,5 +11,8 @@
     },
     "git.detectEncoding": false,
     "scm.inputFontFamily": "consolas",
-    "terminal.integrated.defaultProfile.windows": "Command Prompt"
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "files.associations": {
+        "main.h": "c"
+    }
 }
