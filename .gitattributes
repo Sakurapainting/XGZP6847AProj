@@ -1,0 +1,4 @@
+*.c text eol=crlf encoding=UTF-8
+*.h text eol=crlf encoding=UTF-8
+*.cpp text eol=crlf encoding=UTF-8
+*.hpp text eol=crlf encoding=UTF-8

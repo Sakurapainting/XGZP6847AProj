@@ -1,0 +1,15 @@
+{
+    "clang-format.executable": "C:\\Users\\28990\\.vscode\\extensions\\ms-vscode.cpptools-1.27.2-win32-x64\\LLVM\\bin\\clang-format.exe",
+    "files.encoding": "utf8",
+    "files.autoGuessEncoding": false,
+    "files.eol": "\r\n",
+    "[c]": {
+        "files.encoding": "utf8"
+    },
+    "[cpp]": {
+        "files.encoding": "utf8"
+    },
+    "git.detectEncoding": false,
+    "scm.inputFontFamily": "consolas",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt"
+}
